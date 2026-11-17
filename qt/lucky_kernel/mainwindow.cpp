@@ -46,6 +46,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->groupResults->layout()->setContentsMargins(0, 0, 0, 0);
     ui->groupResults->layout()->setSpacing(0);
 
+
+
     // TCP 소켓은 한 번 생성해서 계속 사용합니다.
     auto *tcp = new QTcpSocket(this);
 
@@ -194,6 +196,7 @@ MainWindow::MainWindow(QWidget *parent)
     // 실제 캡처 명령은 아직 구현하지 않았습니다.
     ui->btnStartCapture->setEnabled(false);
     ui->btnCancelCapture->setEnabled(false);
+
 
 }
 
