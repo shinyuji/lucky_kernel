@@ -1,31 +1,45 @@
-# lucky_kernel
+# 🍀 lucky_kernel
+> KR260 FPGA 기반 **로직 분석기** 프로젝트
 
-최종 프로젝트 수행 기간 (26.11.12. ~ 26.12.17.)  
+최종 프로젝트 수행 기간 (26.11.12. ~ 26.12.16.)  
 깃 개설일 26.10.27
 
-팀명 : Lucky_Kernel  
-팀장 : 이양배  
-팀원 : 석민정, 신유지  
-주제 : 로직분석기
-구현사항 : ...........  
-결과물목록 : FSM, FLOWCHART
-일정 및 업무관리 : Jira
+## 📌 프로젝트 개요
 
-구성환경 및 툴  
+| 항목 | 내용 |
+|---|---|
+| 팀명 | Lucky_Kernel |
+| 주제 | 로직 분석기 |
+| 수행 기간 | 2026.11.12 ~ 2026.12.18 |
+| 저장소 개설일 | 2026.10.27 |
+| 일정 및 업무 관리 | Jira |
 
-Vivado 2026.1  
-Vitis 2026.1  
-ubuntu 24.04.2 LTS  
-fpga kr 260  Boot FW 1.07 / 2026.1
-Linux Kernel	6.8.0-1015-xilinx
-wsl2  
-MobaXterm  
-ssh  
+## 💻 개발 환경
+
+### 하드웨어 / OS
+
+| 구분 | 버전 |
+|---|---|
+| FPGA 보드 | Xilinx KR260 (Boot FW 1.07 / 2026.1) |
+| OS (KR260) | Ubuntu 24.04.2 LTS |
+| Linux Kernel | 6.8.0-1015-xilinx |
+| 개발 PC | Windows + WSL2 |
+
+### 툴
+
+| 구분 | 툴 |
+|---|---|
+| FPGA 설계 | Vivado 2026.1 |
+| 임베디드 SW | Vitis 2026.1 |
+| 원격 접속 | MobaXterm, SSH |
+
+---
 
 
 ## 개인 계정에서 개발하되 깃 저장소 관리는 공용 그룹 lucky
 
-개발 방식
+## 🔧 개발 방식
+
 | 종류 | 작성 | 빌드 | 실행 |
 |---|---|---|---|
 | Verilog/SystemVerilog | Windows | Vivado | KR260 FPGA |
@@ -37,7 +51,7 @@ ssh
 | Qt Viewer | Windows | Windows | Windows |
 | STM32 | Windows | Windows | STM32 |
 
-## 이슈 작성 방법
+## 🐞 이슈 작성 방법
 
 제목: [BUG] AXI DMA 전송 시 interrupt 발생하지 않음  
 현상: DMA transfer 시작 후 IRQ handler가 호출되지 않음  
@@ -48,15 +62,15 @@ ssh
 담당: 홍길동  
 
 
-## Git 및 PR 관리
+## 🌿 Git 및 PR 관리
 
 ### PR 규칙
-- PR 제목에 작업 기간, 작업명, 작업자 이름을 가능한 한 포함
-- 변경 목적과 주요 내용을 본문에 가능한 한 기록
-- 검증 방법과 결과를 함께 가능한 한 포함
+- **제목**: `작업 기간 + 작업명 + 작업자 가능한 한 포함`
+- **본문**: 변경 목적과 주요 변경 내용
+- **검증**: 검증 방법과 결과
 
 ```text
-26/11/03 ~ 26/11/03 메이크 파일 수정 - 이양배
+26/11/03 ~ 26/11/03 메이크파일 수정 - 이양배
 ```
 
 ### Commit 규칙
